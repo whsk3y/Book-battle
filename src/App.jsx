@@ -1,5 +1,8 @@
 import React, { useState, useCallback, useEffect, useRef } from "react";
 
+// Bump this whenever you update the file so you can confirm the new version is live.
+const APP_VERSION = "v1.0";
+
 const BOOKS = [
   "The Labors of Hercules Beal",
   "Coyote Lost and Found",
@@ -1619,6 +1622,10 @@ export default function App() {
         </button>
         <p style={{ color:"#30363d", fontSize:11, marginTop:14 }}>
           20 random questions · Answer fast for bonus points
+        </p>
+        <p style={{ color:"#21262d", fontSize:10, marginTop:24,
+          fontFamily:"system-ui, sans-serif", letterSpacing:0.5 }}>
+          {APP_VERSION}
         </p>
       </div>
     );
